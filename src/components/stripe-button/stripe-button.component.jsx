@@ -8,7 +8,7 @@ const StripeCheckoutButton = ({ price }) => {
 	const onToken = (token) => {
 		console.log(token);
 		alert('Payment Successful');
-	}
+	};
 
 	return (
 		<StripeCheckout 
@@ -21,7 +21,8 @@ const StripeCheckoutButton = ({ price }) => {
 			amount={priceForStripe}
 			panelLabel='Pay Now'
 			token={onToken}
-			stripeKey={publishableKey}/>
+			stripeKey={publishableKey}
+		/>
 	);
 };
 
